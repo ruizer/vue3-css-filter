@@ -8,9 +8,13 @@ export default function() {
   const setCommitFilter = (val) => {
     store.commit("UPDATE_FILTER", val);
   };
+  const resetFilter = () => {
+    store.commit("RESET_FILTER");
+  };
 
   return {
     filter,
     setCommitFilter,
+    resetFilter,
   };
 }
